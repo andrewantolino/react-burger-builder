@@ -1,0 +1,31 @@
+.Hamburger {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+  width: 32px;
+  cursor: pointer;
+}
+
+.Hamburger .TopBar,
+.Hamburger .MiddleBar,
+.Hamburger .BottomBar {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.Hamburger .MiddleBar {
+  margin-top: 6px;
+}
+
+.Hamburger .BottomBar {
+  margin-top: 6px;
+}
+
+@media (min-width: 500px) {
+  .Hamburger {
+      display: none;
+  }
+}
