@@ -97,7 +97,7 @@ class BurgerBuilder extends Component {
     // }
 
     disabledInfo = Object.keys(disabledInfo).map(ingredient => disabledInfo[ingredient] <= 0);
-    console.log(disabledInfo);
+    // console.log(disabledInfo);
 
     return (
       <Aux>

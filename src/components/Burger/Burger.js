@@ -6,7 +6,7 @@ import classes from './Burger.css';
 
 const burger = (props) => {
   const { ingredients } = props;
-  console.log(ingredients);
+  // console.log(ingredients);
   let transformedIngredients = Object.keys(ingredients)
     .map((igKey) => {
       return [...Array(ingredients[igKey])].map((_, i) => {
@@ -18,7 +18,7 @@ const burger = (props) => {
       return arr.concat(el);
     }, []);
 
-  console.log(transformedIngredients);
+  // console.log(transformedIngredients);
 
   if (transformedIngredients.length === 0) {
     transformedIngredients = <p>Please select some ingredients</p>;
